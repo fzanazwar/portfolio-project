@@ -17,14 +17,15 @@ It is unknown who created this dataset, but it was originally published in UC Ir
 The dataset comprises of 
 
 1. UID: unique identifier ranging from 1 to 10000
-2. productID: consisting of a letter L, M, or H for low (50% of all products), medium (30%), and high (20%) as product quality variants and a variant-specific serial number
-3. Air temperature [K]: generated using a random walk process later normalized to a standard deviation of 2 K around 300 K
-4. Process temperature [K]: generated using a random walk process normalized to a standard deviation of 1 K, added to the air temperature plus 10 K.
-5. Rotational speed [rpm]: calculated from powepower of 2860 W, overlaid with a normally distributed noise
-6. Torque [Nm]: torque values are normally distributed around 40 Nm with an Ïƒ = 10 Nm and no negative values.
-7. Tool wear [min]: The quality variants H/M/L add 5/3/2 minutes of tool wear to the used tool in the process.
-8. Target : Indicates whether the machine has failed in this particular data point
-9. Failure Type : The type of machine failure experienced
+2. Product ID: a variant-specific serial number
+3. Type : consists of a letter L, M, or H for low (50% of all products), medium (30%), and high (20%) as product quality variants
+4. Air temperature [K]: generated using a random walk process normalized to a standard deviation of 2 K around 300 K
+5. Process temperature [K]: generated using a random walk process normalized to a standard deviation of 1 K, added to the air temperature plus 10 K.
+6. Rotational speed [rpm]: calculated from power of 2860 W, overlaid with a normally distributed noise
+7. Torque [Nm]: torque values are normally distributed around 40 Nm with an Ïƒ = 10 Nm and no negative values.
+8. Tool wear [min]: The quality variants H/M/L add 5/3/2 minutes of tool wear to the used tool in the process.
+9. Target : Indicates whether the machine has failed in this particular data point where 1 means Failure and 0 means No Failure
+10. Failure Type : The type of machine failure experienced
 
 - How many instances of each type are there? 
 
