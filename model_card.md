@@ -27,6 +27,7 @@ In order to evaluate the performance, the accuracy and the confusion matrix of t
 ## Limitations
 
 - All of the features are continuous numeric variables while the categorical feature ('Type') has been removed to reduce the complexity of the model.
+- The dataset used is a reflection of a real predictive maintenance dataset and therefore, it is not a 100% real dataset. The model used in this project may react differently if a real industry dataset was used.
 
 ## Trade-offs
 
