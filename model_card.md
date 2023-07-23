@@ -1,23 +1,31 @@
 # Model Card
 
-See the [example Google model cards](https://modelcards.withgoogle.com/model-reports) for inspiration. 
-
 ## Model Description
 
-**Input:** Describe the inputs of your model 
+**Input:** 
 
-**Output:** Describe the output(s) of your model
+1. Air temperature [K]: generated using a random walk process normalized to a standard deviation of 2 K around 300 K
+2. Process temperature [K]: generated using a random walk process normalized to a standard deviation of 1 K, added to the air temperature plus 10 K.
+3. Rotational speed [rpm]: calculated from powepower of 2860 W, overlaid with a normally distributed noise
+4. Torque [Nm]: torque values are normally distributed around 40 Nm with an Ïƒ = 10 Nm and no negative values.
+5. Tool wear [min]: the quality variants H/M/L add 5/3/2 minutes of tool wear to the used tool in the process.
 
-**Model Architecture:** Describe the model architecture you’ve used
+**Output:** 
+
+- Failure Type : The type of machine failure experienced
+
+**Model Architecture:**
+
+The model used was k-nearest neighbor with GridSearch for hyperparameter tuning.
 
 ## Performance
 
-Give a summary graph or metrics of how the model performs. Remember to include how you are measuring the performance and what data you analysed it on. 
+In order to evaluate the performance, the accuracy and the confusion matrix of the model were generated and presented.
 
 ## Limitations
 
-Outline the limitations of your model.
+- All of the features are continuous numeric variables while the categorical feature ('Type') has been removed to reduce the complexity of the model.
 
 ## Trade-offs
 
-Outline any trade-offs of your model, such as any circumstances where the model exhibits performance issues. 
+Removing one of the features may result in missing out on an underlying relationship between that removed feature and the rest of the dataset used.
