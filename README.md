@@ -1,6 +1,6 @@
 # Predicting Machine Type Failure
 
-This project is about predicting the type of machine failure based on certain environmental factors and operational settings of the machine using a machine learning model.
+This project is about predicting the type of machine failure based on certain environmental factors and operational settings of the machine using a machine learning model. The machine learning model with its optimised hyperparameters was successful in producing a high accuracy result and low false negatives.
 
 ## DATA
 A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
