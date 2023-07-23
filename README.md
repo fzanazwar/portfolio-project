@@ -1,24 +1,31 @@
-# PROJECT TITLE 
+# Model Card
 
+## Model Description
 
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
+**Input:** 
 
-## DATA
-A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
+1. Air temperature [K]: generated using a random walk process normalized to a standard deviation of 2 K around 300 K
+2. Process temperature [K]: generated using a random walk process normalized to a standard deviation of 1 K, added to the air temperature plus 10 K.
+3. Rotational speed [rpm]: calculated from powepower of 2860 W, overlaid with a normally distributed noise
+4. Torque [Nm]: torque values are normally distributed around 40 Nm with an Ïƒ = 10 Nm and no negative values.
+5. Tool wear [min]: the quality variants H/M/L add 5/3/2 minutes of tool wear to the used tool in the process.
 
-## MODEL 
-A summary of the model you’re using and why you chose it. 
+**Output:** 
 
-## HYPERPARAMETER OPTIMSATION
-Description of which hyperparameters you have and how you chose to optimise them. 
+- Failure Type : The type of machine failure experienced
 
-## RESULTS
-A summary of your results and what you can learn from your model 
+**Model Architecture:**
 
-You can include images of plots using the code below:
-![Screenshot](image.png)
+The model used was k-nearest neighbor with GridSearch for hyperparameter tuning.
 
-## (OPTIONAL: CONTACT DETAILS)
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
+## Performance
 
+In order to evaluate the performance, the accuracy and the confusion matrix of the model were generated and presented.
+
+## Limitations
+
+- All of the features are continuous numeric variables while the categorical feature ('Type') has been removed to reduce the complexity of the model.
+
+## Trade-offs
+
+Removing one of the features may result in missing out on an underlying relationship between that removed feature and the rest of the dataset used.
