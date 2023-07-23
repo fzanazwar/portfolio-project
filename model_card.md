@@ -20,7 +20,9 @@ The model used was k-nearest neighbor with GridSearch for hyperparameter tuning.
 
 ## Performance
 
-In order to evaluate the performance, the accuracy and the confusion matrix of the model were generated and presented.
+In order to evaluate the performance, the accuracy and the confusion matrix of the model were generated and presented. The accuracy of the model was 96.85%. Other than that, the confusion matrix showed that the model was able to have a low number of false negatives which in this case was predicting failures as 'No Failure'
+
+![confusion_matrix](conf_matrix.png)
 
 ## Limitations
 
