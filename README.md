@@ -1,8 +1,5 @@
 # Predicting Machine Type Failure
 
-
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-
 This project is about predicting the type of machine failure based on certain environmental factors and operational settings of the machine using a machine learning model.
 
 ## DATA
