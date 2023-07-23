@@ -71,7 +71,7 @@ The dataset was created primarily to predict machine failure and therefore, it s
 
 - How has the dataset already been distributed? 
 
-The dataset is publicly available through Kaggle.
+The dataset is publicly available through Kaggle and UC Irvine Machine Learning Repository.
 
 - Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)? 
 
