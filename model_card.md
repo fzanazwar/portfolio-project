@@ -30,6 +30,8 @@ In order to evaluate the performance, the accuracy and the confusion matrix of t
 
 - The dataset used is a reflection of a real predictive maintenance dataset and therefore, it is not a 100% real dataset. The model used in this project may react differently if a real industry dataset was used.
 
+- The dataset has an imbalance of data between 'No Failure' and the other type of failures. This resulted in the model having a strong preference for 'No Failure' predictions. This can be avoided with dataset with balance data for each type of machine failure
+
 ## Trade-offs
 
 Removing one of the features may result in missing out on an underlying relationship between that removed feature and the rest of the dataset used.
