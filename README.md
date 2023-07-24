@@ -16,7 +16,7 @@ There are 10 000 instances in the dataset which comprises of:
 7. Torque [Nm]: torque values are normally distributed around 40 Nm with an Ïƒ = 10 Nm and no negative values.
 8. Tool wear [min]: The quality variants H/M/L add 5/3/2 minutes of tool wear to the used tool in the process.
 9. Target : Indicates whether the machine has failed in this particular data point where 1 means Failure and 0 means No Failure
-10. Failure Type : The type of machine failure experienced
+10. Failure Type : The type of machine failure experienced which includes No Failure, Heat Dissipation Failure, Power Failure, Overstrain Failure,Tool Wear Failure and Random Failures.
 
 ## MODEL 
 The model used is the k-nearest neighbor model. The reason for choosing this is that it is easy to implement for multi-class classification problems which is the case for this project. Moreover, although it will have problems if the datasets have high dimensionality, the dimensionality of the dataset used was low enough to not cause any problems.
