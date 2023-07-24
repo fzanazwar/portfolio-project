@@ -24,7 +24,7 @@ The model used is the k-nearest neighbor model. The reason for choosing this is 
 ## HYPERPARAMETER OPTIMSATION
 The hyperparameters I chose to optimise were 
 
-1. the number of neighbors (n_neighbors) : 1 - 21
+1. the number of neighbors (n_neighbors) : 1 - 20
 2. the leaf size (leaf_size) : 15 - 45
 3. the algorithm used to compute the nearest neighbors : 'auto', 'ball_tree', 'kd_tree', 'brute'
 
