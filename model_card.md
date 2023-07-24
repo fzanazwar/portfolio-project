@@ -12,7 +12,7 @@
 
 **Output:** 
 
-- Failure Type : The type of machine failure experienced which includes No Failure, Heat Dissipation Failure, Power Failure, Overstrain Failure,Tool Wear Failure and Random Failures.
+- Failure Type : The type of machine failure experienced which includes No Failure, Heat Dissipation Failure, Power Failure, Overstrain Failure, Tool Wear Failure and Random Failures.
 
 **Model Architecture:**
 
