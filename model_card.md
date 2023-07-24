@@ -12,7 +12,7 @@
 
 **Output:** 
 
-- Failure Type : The type of machine failure experienced
+- Failure Type : The type of machine failure experienced which includes No Failure, Heat Dissipation Failure, Power Failure, Overstrain Failure,Tool Wear Failure and Random Failures.
 
 **Model Architecture:**
 
@@ -20,9 +20,9 @@ The model used was k-nearest neighbor with GridSearch for hyperparameter tuning.
 
 ## Performance
 
-In order to evaluate the performance, the accuracy and the confusion matrix of the model were generated and presented. The accuracy of the model was 96.85%. Other than that, the confusion matrix showed that the model was able to have a low number of false negatives which in this case was predicting failures as 'No Failure'
+In order to evaluate the performance, the accuracy and the confusion matrix of the model were generated and presented. The accuracy of the model was 97.5%. Other than that, the confusion matrix showed that the model was able to have a low number of false negatives which in this case was predicting failures as 'No Failure'. However, the model has a strong preference on 'No Failure' prediction. As shown in the confusion matrix, 'Random Failure' and 'Tool Wear Failure' have no correct predictions while the other type of failures have low number of predictions. This is due to the high disparity of the data between 'No Failure' and the other types of failures.
 
-![confusion_matrix](conf_matrix.png)
+![confusion_matrix](conf_matrix2.png)
 
 ## Limitations
 
