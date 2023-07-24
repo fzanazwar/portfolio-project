@@ -19,7 +19,7 @@ There are 10 000 instances in the dataset which comprises of:
 10. Failure Type : The type of machine failure experienced
 
 ## MODEL 
-The model used is the k-nearest neighbor model. The reason for choosing this is that it is easy to implement for multi-class classification problems which is the case for this project. Moreover, although it will have problems if the datasets have high dimensionality, the dimensionality of the dataset used was was low enough to not cause any problems.
+The model used is the k-nearest neighbor model. The reason for choosing this is that it is easy to implement for multi-class classification problems which is the case for this project. Moreover, although it will have problems if the datasets have high dimensionality, the dimensionality of the dataset used was low enough to not cause any problems.
 
 ## HYPERPARAMETER OPTIMSATION
 The hyperparameters I chose to optimise were 
