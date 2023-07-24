@@ -31,6 +31,6 @@ The hyperparameters I chose to optimise were
 These hyperparameters were optimised using GridSearch.
 
 ## RESULTS
-The accuracy of the model was 97.5% with very low number of false negatives which can be seen in the confusion matrix below. However, it should be noted that 'Random Failure' and 'Tool Wear Failure' have no correct predictions while the other type of failures have low number of predictions. Unfortunately, this is the cause of imbalance data from the dataset used where there is a large percentage of 'No Failure' instances which causes the model to have a strong preference in 'No Failure' predictions.
+The accuracy of the model was 97.5% with very low number of false negatives which can be seen in the confusion matrix below. However, it should be noted that 'Random Failure' and 'Tool Wear Failure' have no correct predictions while the other type of failures have low number of predictions. Unfortunately, this is the cause of imbalance data from the dataset used where there is a large percentage of 'No Failure' instances while 'Random Failure' and 'Tool Wear Failure' have the lowest percentage of instances in the dataset. As a result, the model have a strong preference in 'No Failure' predictions.
 
 ![confusion_matrix](conf_matrix2.png) ![failure_types](failure_types.png)
