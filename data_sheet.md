@@ -25,7 +25,7 @@ The dataset comprises of
 7. Torque [Nm]: torque values are normally distributed around 40 Nm with an Ïƒ = 10 Nm and no negative values.
 8. Tool wear [min]: The quality variants H/M/L add 5/3/2 minutes of tool wear to the used tool in the process.
 9. Target : Indicates whether the machine has failed in this particular data point where 1 means Failure and 0 means No Failure
-10. Failure Type : The type of machine failure experienced
+10. Failure Type : The type of machine failure experienced which includes No Failure, Heat Dissipation Failure, Power Failure, Overstrain Failure,Tool Wear Failure and Random Failures.
 
 - How many instances of each type are there? 
 
