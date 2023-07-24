@@ -1,6 +1,6 @@
 # Predicting Machine Type Failure
 
-This project is about predicting the type of machine failure based on certain environmental factors and operational settings of the machine using a machine learning model. The machine learning model with its optimised hyperparameters was successful in producing a high accuracy result and low false negatives.
+This project is about predicting the type of machine failure based on certain environmental factors and operational settings of the machine using a machine learning model. The machine learning model with its optimised hyperparameters was successful in producing a high accuracy result and low number of false negatives.
 
 ## DATA
 The dataset is called Machine Predictive Maintenance Classification and can be found and downloaded in [Kaggle](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
