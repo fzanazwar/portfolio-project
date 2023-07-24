@@ -19,12 +19,18 @@ There are 10 000 instances in the dataset which comprises of:
 10. Failure Type : The type of machine failure experienced
 
 ## MODEL 
-A summary of the model you’re using and why you chose it. 
+The model used is the k-nearest neighbor model. The reason for choosing this is that it is easy to implement for multi-class classification problems which is the case for this project. Moreover, although it will have problems if the datasets have high dimensionality, the dimensionality of the dataset used was was low enough to not cause any problems.
 
 ## HYPERPARAMETER OPTIMSATION
-Description of which hyperparameters you have and how you chose to optimise them. 
+The hyperparameters I chose to optimise were 
+
+1. the number of neighbors (n_neighbors) : 1 - 21
+2. the leaf size (leaf_size) : 15 - 45
+3. the algorithm used to compute the nearest neighbors : 'auto', 'ball_tree', 'kd_tree', 'brute'
+
+These hyperparameters were optimised using GridSearch.
 
 ## RESULTS
-The accuracy of the model was 96.85% with very few false negatives which can be seen in the confusion matrix below.
+The accuracy of the model was 96.85% with very few false negatives which can be seen in the confusion matrix below. However, it should be noted that there is barely any predictions on some of the failures whereas there is a strong preference in the predictions of 'No Failure'. Unfortunately, this is the cause of imbalance data where there is a large percentage of 'No Failure' instances
 
 ![Screenshot](conf_matrix.png)
